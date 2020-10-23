@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cwms"
+    }
+  },
+  "defaultProject": "cwms",
+  "cli": {
+    "analytics": "c8c716c8-0098-4cd8-9954-83dc4e6c2fb6"
+  }
 }

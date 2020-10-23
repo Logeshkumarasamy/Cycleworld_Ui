@@ -1,0 +1,62 @@
+.carousel-inner{
+    width:100%;
+    max-height: 700px !important;
+  }
+  
+  #carouselExampleControls{
+      margin-bottom: 50px !important;
+  }
+
+.h3, h3 {
+    font-size: 28px;
+}
+.wel-ctn h3 {
+    font-weight: bold;
+}
+.wel-ctn p {
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 6%;
+    margin-bottom: 32px;
+    font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.wel-img {
+    text-align: right;
+    
+}
+.wel-ctn {
+    padding: 100px 0px 45px 0;
+}
+.carousel-item{
+    height: 500% !important;
+}
+
+#arrival {
+    padding-top: 50px;
+    
+}
+.card:hover {
+    transform: scale(1.1); 
+    border-radius: 2%;
+    
+  }
+  .pm-divider {
+      font-weight: 300px;
+  }
+  #Heading {
+      font-weight: bold;
+      font-size: 35px;
+      font-family: 'Roboto', Arial, sans-serif;
+      text-transform: uppercase;
+      text-decoration: underline;
+  }
+  
+
+
+
+
+  
+  
+  
+  

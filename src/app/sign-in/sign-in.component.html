@@ -1,0 +1,63 @@
+<div class="signup-form">
+	<div>{{this.UserReg}}</div>
+	<form #signup="ngForm" (ngSubmit)="onSubmit(signup)">
+		<h2 style="text-align: center;">Sign Up</h2>
+		<div class="form-group" [class.has-error]="fulNameControl.invalid && fulNameControl.touched"
+			[class.has-sucecss]="fulNameControl">
+			<label class="control-label">your name</label>
+			<input type="text" class="form-control" pattern="[A-Za-z]{1,15}" name="username"
+				[(ngModel)]="UserReg.username" #fulNameControl="ngModel" required>
+			<span class="text-danger"
+				*ngIf="fulNameControl.invalid && (fulNameControl.dirty || fulNameControl.touched)">Full Name
+				required</span>
+
+		</div>
+		<div class="form-group" [class.has-error]="fulNameControl.invalid && fullNameControl.touched"
+			[class.has-sucecss]="fullNameControl">
+			<label>Email Address</label>
+			<input type="email" class="form-control" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" name="email"
+				[(ngModel)]="UserReg.email" #fullNameControl="ngModel" required>
+			<span class="text-danger"
+				*ngIf="fullNameControl.invalid && (fullNameControl.dirty || fullNameControl.touched)">Email
+				required</span>
+		</div>
+		<div class="form-group">
+			<label>Password</label>
+			<input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="form-control"
+				name="password" [(ngModel)]="UserReg.password" #fullPassworldControl="ngModel" required>
+			<span class="text-danger"
+				*ngIf="fullPassworldControl.invalid && (fullPassworldControl.dirty || fullPassworldControl.touched)">password
+				required</span>
+		</div>
+		<div class="form-group">
+			<label>Mobile number</label>
+			<input type="text" pattern="^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$"
+				class="form-control" name="Mobilenumber" [(ngModel)]="UserReg.Mobilenumber"
+				#MobilenumberControl="ngModel" required>
+			<span class="text-danger"
+				*ngIf="MobilenumberControl.invalid && (MobilenumberControl.dirty || MobilenumberControl.touched)">Mobilenumber
+				required</span>
+		</div>
+		<div class="form-group">
+			<label>address</label>
+			<input type="text" class="form-control" name="address" [(ngModel)]="UserReg.address"
+				#addressControl="ngModel" required>
+			<span class="text-danger"
+				*ngIf="addressControl.invalid && (addressControl.dirty || addressControl.touched)">address
+				required</span>
+		</div>
+		<div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" name="Input" #inputControl="ngModel"
+				[(ngModel)]="UserReg.input" required>
+			<label class="form-check-label">I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy
+					Policy</a></label><br>
+			<span class="text-danger"
+				*ngIf="inputControl.invalid && (inputControl.dirty || inputControl.touched)">Please click the
+				checkbox</span>
+		</div>
+		<div class="text-center">
+			<button type="submit" class="btn btn-primary" [disabled]="signup.invalid" (click)="createuser()">Sign Up</button>
+		</div>
+	</form>
+	<div class="text-center">Already have an account? <a href="">Login here</a></div>
+</div>
