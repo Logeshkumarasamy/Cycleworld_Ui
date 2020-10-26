@@ -1,5 +1,4 @@
 <div class="signup-form">
-	<div>{{this.UserReg}}</div>
 	<form #signup="ngForm" (ngSubmit)="onSubmit(signup)">
 		<h2 style="text-align: center;">Sign Up</h2>
 		<div class="form-group" [class.has-error]="fulNameControl.invalid && fulNameControl.touched"
@@ -10,7 +9,7 @@
 			<span class="text-danger"
 				*ngIf="fulNameControl.invalid && (fulNameControl.dirty || fulNameControl.touched)">Full Name
 				required</span>
-
+    
 		</div>
 		<div class="form-group" [class.has-error]="fulNameControl.invalid && fullNameControl.touched"
 			[class.has-sucecss]="fullNameControl">
@@ -60,4 +59,7 @@
 		</div>
 	</form>
 	<div class="text-center">Already have an account? <a href="">Login here</a></div>
+	<div>
+		{{UserRegj | json}}
+	</div>
 </div>

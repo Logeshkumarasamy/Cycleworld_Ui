@@ -20,10 +20,11 @@ export class SignInComponent implements OnInit {
     
   
   constructor(private userregister :UserregisterService,private router: Router) { }
-  UserReg : any =[];
+  UserRegj : any =[];
+  UserReg :any =[];
   ngOnInit(): void {
     this.userregister.getAllUser().subscribe((data)=>{
-      this.UserReg = data;
+      this.UserRegj = data; 
     });
   }
   createuser =()=>{
@@ -31,6 +32,7 @@ export class SignInComponent implements OnInit {
       window.alert('User Created Successfully');
     })
   }
+
 
 
 
