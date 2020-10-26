@@ -1,12 +1,13 @@
 export class UserReg {
+    id: string;
+    userName:String;
+    passworld:String;
+    gmailId:String;
+    mobileNumber:String;
+    address:String;
+    isAcceptTearms: boolean;
 
-    constructor(
-    id:number,
-    username:String,
-    passworld:String,
-    Gmailid:String,
-    Mobilenumber:String,
-    address:String,)
+    constructor()
     {}
 
 }
