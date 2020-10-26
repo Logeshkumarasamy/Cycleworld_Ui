@@ -15,17 +15,16 @@ export class SignInComponent implements OnInit {
   onSubmit(signup: NgForm) {
     console.log(signup.value);
     signup.reset();
-    
 }
-    
-  
+
+
   constructor(private userregister :UserregisterService,private router: Router) { }
-  UserRegj : any =[];
-  UserReg :any =[];
+  UserReg : UserReg;
   ngOnInit(): void {
-    this.userregister.getAllUser().subscribe((data)=>{
-      this.UserRegj = data; 
-    });
+    this.UserReg = new UserReg();
+    // this.userregister.getAllUser().subscribe((data)=>{
+    //   this.UserReg = data;
+    // });
   }
   createuser =()=>{
     this.userregister.createUser(this.UserReg).subscribe(()=>{
