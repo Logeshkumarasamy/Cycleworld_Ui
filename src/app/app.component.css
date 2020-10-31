@@ -16,3 +16,39 @@
 .my-float{
 	margin-top:16px;
 }
+.fb-ic {
+    background: #222;
+    padding: 7px 11px 9px 11px;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-table;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 34px;
+}
+.fb-ic:hover{
+	background-color: blue;
+}
+.CcFooter {
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	line-break: initial;
+	text-align: justify;
+	font-family: 'Times New Roman', Times, serif;
+}
+footer {
+	background-color: #a5b3bf;
+}
+a,h6,strong {
+	font-size: 15px;
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
+}
+i {
+	color: white;
+}

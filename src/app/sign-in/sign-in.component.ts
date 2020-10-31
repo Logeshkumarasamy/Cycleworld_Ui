@@ -4,6 +4,7 @@ import { UserReg } from '../user-reg';
 import { UserregisterService } from '../userregister.service';
 import {NgForm} from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-sign-in',
@@ -11,13 +12,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit {
-
-  onSubmit(signup: NgForm) {
-    console.log(signup.value);
-    signup.reset();
-}
-
-
   constructor(private userregister :UserregisterService,private router: Router) { }
   UserReg : UserReg;
   ngOnInit(): void {
@@ -28,9 +22,11 @@ export class SignInComponent implements OnInit {
   }
   createuser =()=>{
     this.userregister.createUser(this.UserReg).subscribe(()=>{
-      window.alert('User Created Successfully');
+      Swal.fire('Registration Successful! Please Login!');
+      this.router.navigate(['login']);
     })
   }
+  
 
 
 

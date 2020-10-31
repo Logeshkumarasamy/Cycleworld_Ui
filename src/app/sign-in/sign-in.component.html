@@ -1,5 +1,5 @@
 <div class="signup-form">
-	<form #signup="ngForm" (ngSubmit)="onSubmit(signup)">
+	<form #signup="ngForm">
 		<h2 style="text-align: center;">Sign Up</h2>
 		<div class="form-group" [class.has-error]="fulNameControl.invalid && fulNameControl.touched"
 			[class.has-sucecss]="fulNameControl">
@@ -58,8 +58,6 @@
 			<button type="submit" class="btn btn-primary" [disabled]="signup.invalid" (click)="createuser()">Sign Up</button>
 		</div>
 	</form>
-	<div class="text-center">Already have an account? <a href="">Login here</a></div>
-	<div>
-		{{UserRegj | json}}
-	</div>
+	<div class="text-center">Already have an account? <a routerLink="/login">Login here</a></div>
 </div>
+

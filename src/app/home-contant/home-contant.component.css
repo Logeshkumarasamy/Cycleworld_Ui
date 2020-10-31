@@ -51,6 +51,55 @@
       text-transform: uppercase;
       text-decoration: underline;
   }
+  .service-content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/wrapper.jpg");
+    position: relative;
+}
+.cy_achieve_overlay::after {
+    position: absolute;
+    width: 57.56%;
+    right: -4%;
+    top: 0;
+    height: 100%;
+    background-color: rgba(168,207,69,.88);
+    content: "";
+    transform: skew(-14deg);
+    -webkit-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+    -o-transform: skew(-14deg);
+    -ms-transform: skew(-14deg);
+}
+.cy_achieve_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.service-ctn img {
+    width: 55px;
+}
+.service-ctn img {
+    width: 55px;
+}
+img {
+    max-width: 100%;
+}
+.service-ctn {
+    padding: 30px 60px 30px;
+}
+.service-ctn h4 {
+    font-size: 20px;
+    color: white;
+    padding-top: 0;
+}
+h6 {
+    font-size: 20px;
+}
+
   
 
 

@@ -18,5 +18,8 @@ export class UserregisterService {
   createUser= (UserReg) =>{
     return this.http.post('http://localhost:8081/api/user/register',UserReg)
   }
+  loginUserRemote = (UserReg) => {
+    return this.http.post('http://localhost:8081/User/login',UserReg)
+  }
 }
 
