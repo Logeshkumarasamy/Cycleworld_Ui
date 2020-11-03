@@ -99,6 +99,28 @@ img {
 h6 {
     font-size: 20px;
 }
+.commenPadding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.heading-primary {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.1px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.text-align {
+    text-align: center;
+}
+.date {
+    text-align: center;
+}
 
   
 
