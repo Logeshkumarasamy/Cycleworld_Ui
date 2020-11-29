@@ -47,6 +47,11 @@ button:hover{
   background-color: white;
   color:red;
 }
+.fa:hover {
+  transition: 0.9s;
+    transform: rotateY(180deg);
+    font-size: px;
+}
 
 
 

@@ -1,0 +1,16 @@
+.fa-heart :active
+ {
+ color: red !important;
+}
+img:hover {
+ transform: scale(1.5); 
+  border-radius: 2%;
+}
+.woocommerce-product-details__short-description {
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+

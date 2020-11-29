@@ -30,6 +30,8 @@
 }
 .fb-ic:hover{
 	background-color: blue;
+	transition: 0.9s;
+    transform: rotateY(180deg);
 }
 .CcFooter {
 	color: black;

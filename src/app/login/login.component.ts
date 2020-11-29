@@ -14,23 +14,47 @@ export class LoginComponent implements OnInit {
   onSubmit(signup: NgForm) {
     console.log(signup.value);
 
-}
+  }
   UserReg = new UserReg();
 
-  constructor(private UserService :UserregisterService ,private route :Router) { }
+  constructor(private UserService: UserregisterService, private route: Router) { }
 
   ngOnInit(): void {
-    
+
   }
-  
-  loginUser() {
+
+  /*loginUser() {
     this.UserService.loginUserRemote(this.UserReg).subscribe(
       data => {
         console.log("responce Recived"),
+
         this.route.navigate(['Dashboard']);
       },
       error =>console.log('error')
     )
+  }*/
+  loginUser() {
+
+    if ((this.UserReg.gmailId == "admin@gmail.com") && (this.UserReg.passworld == "12345")) {
+      this.route.navigate(['Dashboard']);
+    }
+    else if ((this.UserReg.gmailId != null) && (this.UserReg.passworld != null)){
+      this.UserService.loginUserRemote(this.UserReg).subscribe(
+        data => {
+          console.log("responce Recived"),
+
+            this.route.navigate(['UserView']);
+        },
+        error => console.log('error')
+      )
+
+    }
+    else {
+      window.alert('incorrect username or password');
+    }
+
   }
+  
+
 
 }
