@@ -1,13 +1,159 @@
 <div style="text-align: right;">
-      <button class="btn btn-primary" (click)="Logout()">Logout</button>
+  <button class="btn btn-primary" (click)="Logout()">Logout</button>
+</div>
+<div class="col-md-8">
+<button type="button" class="btn btn-success col-md-2 " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Add product</button>
+<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#update" data-whatever="@mdo">update product</button>
+<button type="button" class="btn btn-danger " data-toggle="modal" data-target="#delete" data-whatever="@mdo">delete product</button>
+</div>
+<div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Product id:</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name" required>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Product name</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name"required>
+
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Brand:</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name" required>
+
+          </div>
+          <div class="form-group">
+            <label style="color:black;font-weight:400;">cetegory:</label>
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected disabled>Choose</option>
+                        <option value="1">kids</option>
+                        <option value="2">Womens</option>
+                        <option value="2">mens</option>
+                        <option value="2">accessories</option>
+
+                    </select>
+
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">price:</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name" required>
+
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">image</label>
+            <input type="file" class="form-control" id="recipient-name" required>
+
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="btn btn-primary" (click)="update()">Update</button>
+      </div>
     </div>
-<div class="col-md-10">
+  </div>
+</div>
+<!--************************************-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Product id:</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name" required>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Product name</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name"required>
+
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Brand:</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name" required>
+
+          </div>
+          <div class="form-group">
+            <label style="color:black;font-weight:400;">cetegory:</label>
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected disabled>Choose</option>
+                        <option value="1">kids</option>
+                        <option value="2">Womens</option>
+                        <option value="2">mens</option>
+                        <option value="2">accessories</option>
+
+                    </select>
+
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">price:</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name" required>
+
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">image</label>
+            <input type="file" class="form-control" id="recipient-name" required>
+
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="btn btn-primary" (click)="add()">add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--DELETE-->
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Product id:</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name" required>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Product name</label>
+            <input type="text" pattern="[A-Za-z]{3}" class="form-control" id="recipient-name"required>
+
+          </div>
+          <div class="form-group">
+            <label style="color:black;font-weight:400;">cetegory:</label>
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected disabled>Choose</option>
+                        <option value="1">kids</option>
+                        <option value="2">Womens</option>
+                        <option value="2">mens</option>
+                        <option value="2">accessories</option>
+
+                    </select>
+
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="btn btn-danger">delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+<div class="card">
+<div class="col-md-8">
     <h2> User Details</h2>
     
-    <table class="table table-striped">
+    <table class="table table-bordered">
       <thead>
       <tr>
-        <th class="hidden"></th>
+        
         <th>UserId</th>
         <th>Username</th>
         <th>password</th>
@@ -19,7 +165,7 @@
     </thead>
       <tbody>
       <tr *ngFor="let User of UserReg">
-        <td class="hidden"></td>
+        
         <td>{{User.id}}</td>
         <td>{{User.userName}}</td>
         <td>{{User.passworld}}</td>
@@ -32,5 +178,5 @@
       </tbody>
     </table>
     </div>
-    
+    </div>
     

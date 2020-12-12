@@ -15,6 +15,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { ProductDeteilsComponent } from './product-deteils/product-deteils.component';
 import { AddcartComponent } from './addcart/addcart.component';
+import { OrderProductComponent } from './order-product/order-product.component';
+import { ProCatComponent } from './pro-cat/pro-cat.component';
 
 
 
@@ -31,7 +33,9 @@ import { AddcartComponent } from './addcart/addcart.component';
     DashboardComponent,
     UserViewComponent,
     ProductDeteilsComponent,
-    AddcartComponent
+    AddcartComponent,
+    OrderProductComponent,
+    ProCatComponent
   ],
   imports: [
     BrowserModule,

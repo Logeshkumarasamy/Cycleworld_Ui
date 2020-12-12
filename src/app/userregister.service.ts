@@ -27,5 +27,8 @@ export class UserregisterService {
   deletePost(id){
     return this.http.delete("http://localhost:8081/admin/DeleteUser/{id}"+'/'+id);
   }
+  add= (UserReg) =>{
+    return this.http.post('http://localhost:8081/api/admin/addproduct',UserReg)
+  }
 }
 

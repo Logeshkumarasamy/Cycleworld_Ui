@@ -18,6 +18,11 @@ export class AddcartComponent implements OnInit {
       this.UserReg=data;
        });
   }
+  Cart() {
+    window.alert("successfully added to cart")
+    this.router.navigate(['home']);
+
+  }
   
 
 

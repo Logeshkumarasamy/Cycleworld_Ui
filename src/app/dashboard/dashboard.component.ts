@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { UserReg } from '../user-reg';
 import { UserregisterService } from '../userregister.service';
 
@@ -34,6 +35,18 @@ export class DashboardComponent implements OnInit {
   Logout() {
     localStorage.removeItem('userToken');
     this.router.navigate(['/login']);
+  }
+  add =()=>{
+    //this.UserService.createUser(this.UserReg).subscribe(()=>{
+      Swal.fire('Successfully added Product');
+      close;
+    //})
+  }
+  update =()=>{
+    //this.UserService.createUser(this.UserReg).subscribe(()=>{
+      Swal.fire('Successful!');
+      close;
+    //})
   }
 
 }

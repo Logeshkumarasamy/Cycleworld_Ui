@@ -25,10 +25,10 @@
                                 <thead>
                                     <tr>
                                         <th>Product</th>
-                                        <th>Description</th>
-                                        <th>Qty</th>
+                                        <th>PRODUCT NAME</th>
                                         <th>Price</th>
-                                        <th>Total</th>
+                                        <th>STOCK STATUS</th>
+                                        <th>DATE ADDED</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -40,15 +40,14 @@
                                         
                                         </td>
                                         <td>
-                                            <form class="form-inline">
-                                                <input class="form-control" type="text" value="1">
-                                                <button rel="tooltip" class="btn btn-default" ><i
-                                                        class="fa fa-pencil"></i></button>
-                                                <a href="#" class="btn btn-primary"><i class="fa fa-trash-o"></i></a>
-                                            </form>
+                                           
+                                               4.000
+                        
+                                            
                                         </td>
-                                        <td>Rs :4.800</td>
-                                        <td>Rs :4.800</td>
+                                        <td class="text-danger">OUT OF STROCK</td>
+                                        <td>December 12, 2020	
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><img src="https://via.placeholder.com/400x200/87CEFA/000000"
@@ -56,41 +55,22 @@
                                         <td><strong>Product 2</strong>
                                             <p>Size : M</p>
                                         </td>
-                                        <td>
-                                            <form class="form-inline">
-                                                <input class="form-control" type="text" value="2">
-                                                <button class="btn btn-default"><i class="fa fa-pencil"></i></button>
-                                                <button type="delete" class="btn btn-primary" rel="tooltip"><i
-                                                        class="fa fa-trash-o"></i></button>
-                                            </form>
-                                        </td>
-                                        <td>$16.00</td>
-                                        <td>$32.00</td>
+                                        
+                                               <td>4.000</td>
+                                               <td class="">Thes</td>
+                                               <td>may 2 2021</td>
+                                        
+                
                                     </tr>
-                                    <tr>
-                                        <td colspan="6">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="4" class="text-right">Total Product</td>
-                                        <td>$86.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="4" class="text-right">Total Shipping</td>
-                                        <td>$2.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="4" class="text-right"><strong>Total</strong></td>
-                                        <td>$88.00</td>
-                                    </tr>
+                                   
+        
+                                    
                                 </tbody>
+                                <button class="btn btn-primary" (click)="Cart()">Add All to Cart</button>
                             </table>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Continue
-                    Shopping</a>
-                <a href="#" class="btn btn-primary pull-right">Next<span
-                        class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
     </div>
