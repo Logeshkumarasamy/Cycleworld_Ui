@@ -4,6 +4,7 @@ import { AddcartComponent } from './addcart/addcart.component';
 import { CompareproductComponent } from './compareproduct/compareproduct.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FeedgetComponent } from './feedget/feedget.component';
 import { HomeContantComponent } from './home-contant/home-contant.component';
 import { LoginComponent } from './login/login.component';
 import { OrderProductComponent } from './order-product/order-product.component';
@@ -18,13 +19,15 @@ const routes: Routes = [
   {path:'ContactInfo',component:ContactInfoComponent},
   {path:'signinuser',component:SignInComponent},
   {path:'login',component:LoginComponent},
-  {path:'Dashboard',component:DashboardComponent},
+  {path:'Dashboard',component:DashboardComponent,
+},
+{ path: 'newsletter', component: OrderProductComponent },
   {path:'UserView',component:UserViewComponent},
   {path :'productDetails',component:ProductDeteilsComponent},
   {path :'UserCart',component:AddcartComponent},
-  {path:"order",component:OrderProductComponent},
   {path:"list",component:ProCatComponent},
-  {path:'compareproduct',component:CompareproductComponent}
+  {path:'compareproduct',component:CompareproductComponent},
+  {path:'feedget',component:FeedgetComponent}
 
 
 

@@ -24,6 +24,12 @@ export class UserregisterService {
     return this.http.post('http://localhost:8081/api/user/Newsletter',Newsletter)
 
   }
+  getAllnewsletter =() => {
+    return this.http.get('http://localhost:8081/admin/newsletter')
+  }
+  getAllfeedback =() => {
+    return this.http.get('http://localhost:8081/admin/feedback')
+  }
   sendData = (Feedback) => {
     return this.http.post('http://localhost:8081/api/user/feedback',Feedback)
 
