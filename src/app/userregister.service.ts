@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Feedback } from './feedback';
 import { Newsletter } from './newsletter';
 import { UserReg } from './user-reg';
 
@@ -21,6 +22,10 @@ export class UserregisterService {
   }
   sumbit = (Newsletter) => {
     return this.http.post('http://localhost:8081/api/user/Newsletter',Newsletter)
+
+  }
+  sendData = (Feedback) => {
+    return this.http.post('http://localhost:8081/api/user/feedback',Feedback)
 
   }
   loginUserRemote = (UserReg) => {

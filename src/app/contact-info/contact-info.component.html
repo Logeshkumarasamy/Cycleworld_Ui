@@ -27,9 +27,81 @@
 	</div>
 </div>
 
-<div class="container" ></div>
+<!--<div class="container" ></div>
     <div class="col-md-12" style="background-color: #2a333b; margin-top: 20px;">
         <div class="map-responsive">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2374131256097!2d77.7435543146775!3d12.95665439086569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0d72d32b8785%3A0xe77af597d4b18c03!2sCYCLE%20WORLD%20Whitefield!5e0!3m2!1sen!2sin!4v1600432791599!5m2!1sen!2sin" width="500" height="440" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
-</div>
+</div>-->
+<section class="container-fluid mt-5" >
+	<!--Contact heading-->
+	<div class="row">
+	   <!--Grid column-->
+	   <div class="col-sm-12 mb-4 col-md-5">
+		  <!--Form with header-->
+		  <div class="card border-primary rounded-0">
+			 <div class="card-header p-0">
+				<div class="bg-primary text-white text-center py-2">
+				   <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+				   <p class="m-0"></p>
+				</div>
+			 </div>
+			 <form #signup="ngForm">
+			 <div class="card-body p-3">
+				
+				   <div class="form-group" [class.has-error]="fulNameControl.invalid && fulNameControl.touched"
+				   [class.has-sucecss]="fulNameControl">
+				   <label> Your Name </label>
+				   <div class="input-group">
+					  <input type="text" #fulNameControl="ngModel" [(ngModel)]="Feedback.userName" name="userName" pattern="[A-Za-z]{1,15}"
+					   class="form-control" placeholder="Your name">
+					  
+				   </div>
+				   <span class="text-danger"
+				*ngIf="fulNameControl.invalid && (fulNameControl.dirty || fulNameControl.touched)">Full Name
+				required</span>
+				 </div>
+				   <div class="form-group" [class.has-error]="fulNameControl.invalid && fullNameControl.touched"
+				   [class.has-sucecss]="fullNameControl" >
+					  <label>Your email</label>
+					  <div class="input-group mb-2 mb-sm-0">
+						 <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" name="email"  #fullemailControl="ngModel" [(ngModel)]="Feedback.email" class="form-control" placeholder="Email">
+						 
+					  </div>
+					  <span class="text-danger"
+				*ngIf="fullemailControl.invalid && (fullemailControl.dirty || fullemailControl.touched)">Email
+				required</span>
+				   </div>
+		
+				   <div class="form-group">
+					  <label>Message</label>
+					  <div class="input-group mb-2 mb-sm-0">
+						 <textarea type="text" pattern="[A-Za-z]{1,15}"  class="form-control"  #addressControl="ngModel" [(ngModel)]="Feedback.mesg" name="mesg" ></textarea>
+						 <span class="text-danger"
+				*ngIf="addressControl.invalid && (addressControl.dirty || addressControl.touched)">address
+				required</span>
+		</div>
+					  </div>
+				   </div>
+				   <div class="text-center">
+					  <input type="submit" name="submit" [disabled]="signup.invalid" (click)="sendData()" value="submit" class="btn btn-primary btn-block rounded-0 py-2" style="margin-left: 40%; width: 80px;">
+				   </div>
+			  
+				  
+			 </form>
+			 </div>
+		  </div>
+	   <!--Grid column-->
+	   
+	   <!--Grid column-->
+	   <div class="col-sm-12 col-md-7">
+		  <!--Google map-->
+		  <div class="mb-4">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2374131256097!2d77.7435543146775!3d12.95665439086569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0d72d32b8785%3A0xe77af597d4b18c03!2sCYCLE%20WORLD%20Whitefield!5e0!3m2!1sen!2sin!4v1600432791599!5m2!1sen!2sin" width="500" height="440" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		  </div>
+		  <!--Buttons-->
+		  
+	   </div>
+	   <!--Grid column-->
+		 </div>
+ </section>

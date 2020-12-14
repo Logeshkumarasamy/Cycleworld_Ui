@@ -3,7 +3,7 @@
 		<h2 style="text-align: center;">Sign Up</h2>
 		<div class="form-group" [class.has-error]="fulNameControl.invalid && fulNameControl.touched"
 			[class.has-sucecss]="fulNameControl">
-			<label class="control-label">your name</label>
+			<label class="control-label">your Name</label>
 			<input type="text" class="form-control" pattern="[A-Za-z]{1,15}" name="userName"
 				[(ngModel)]="UserReg.userName" #fulNameControl="ngModel" required>
 			<span class="text-danger"
