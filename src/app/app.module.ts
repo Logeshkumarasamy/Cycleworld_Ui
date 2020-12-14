@@ -17,6 +17,7 @@ import { ProductDeteilsComponent } from './product-deteils/product-deteils.compo
 import { AddcartComponent } from './addcart/addcart.component';
 import { OrderProductComponent } from './order-product/order-product.component';
 import { ProCatComponent } from './pro-cat/pro-cat.component';
+import { CompareproductComponent } from './compareproduct/compareproduct.component';
 
 
 
@@ -35,7 +36,8 @@ import { ProCatComponent } from './pro-cat/pro-cat.component';
     ProductDeteilsComponent,
     AddcartComponent,
     OrderProductComponent,
-    ProCatComponent
+    ProCatComponent,
+    CompareproductComponent
   ],
   imports: [
     BrowserModule,

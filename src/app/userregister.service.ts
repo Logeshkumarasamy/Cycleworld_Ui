@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Newsletter } from './newsletter';
 import { UserReg } from './user-reg';
 
 @Injectable({
@@ -17,6 +18,10 @@ export class UserregisterService {
   }
   createUser= (UserReg) =>{
     return this.http.post('http://localhost:8081/api/user/register',UserReg)
+  }
+  sumbit = (Newsletter) => {
+    return this.http.post('http://localhost:8081/api/user/Newsletter',Newsletter)
+
   }
   loginUserRemote = (UserReg) => {
     return this.http.post('http://localhost:8081/User/login',UserReg)

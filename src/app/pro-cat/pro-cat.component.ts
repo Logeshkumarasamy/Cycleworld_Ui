@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pro-cat.component.css']
 })
 export class ProCatComponent implements OnInit {
-
+  Title ="SHOWING 1–12 OF 4 RESULTS"
   constructor() { }
 
   ngOnInit(): void {

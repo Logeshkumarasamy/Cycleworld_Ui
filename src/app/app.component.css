@@ -53,4 +53,24 @@ a,h6,strong {
 }
 i {
 	color: white;
+	
 }
+
+	.home-newsletter .single h2 {
+	font-size: 22px;
+	color: white;
+	text-transform: uppercase;
+	 }
+	.home-newsletter .single .form-control {
+	height: 50px;
+	border-color: transparent;
+	border-radius: 20px 0 0 20px; }
+	.home-newsletter .single .form-control:focus {
+	box-shadow: none;
+	border-color: #243c4f; }
+	.home-newsletter .single .btn {
+	min-height: 50px; 
+	border-radius: 0 20px 20px 0;
+	background: #243c4f;
+	color: #fff;
+	}

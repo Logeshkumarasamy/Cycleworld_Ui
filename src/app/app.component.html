@@ -80,6 +80,7 @@
                        <a href="mailto:whitefield@cycleworld.in">whitefield@cycleworld.in</a></p>
 
             </div>
+            
             <div class="col-md-6 col-lg-7 text-center text-md-left" style="padding-bottom: 20px;">
 
                 <!-- Facebook -->
@@ -100,6 +101,35 @@
                 </a>
 
             </div>
+            <section class="home-newsletter" style="margin-bottom: 100px;">
+                <div class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                    <div class="single">
+                        <h2>Subscribe to our Newsletter</h2>
+                        <form #signup="ngForm">
+                    <div class="input-group" [class.has-error]="fullNameControl.invalid && fullNameControl.touched"
+                    [class.has-sucecss]="fullNameControl">
+                         <input type="email" class="form-control" [(ngModel)]="Newsletter.gmailId" #fullNameControl="ngModel" name="gmailId" placeholder="Enter your email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" required>
+                        
+                         <span class="input-group-btn">
+                             
+                         <button class="btn btn-theme" [disabled]="signup.invalid" (click)="sumbit()" >Subscribe</button><br>
+                         
+                         </span>
+                          </div>
+                          <span class="text-danger"
+                         *ngIf="fullNameControl.invalid && fullNameControl.dirty">Email required
+                         </span>
+                         <span class="text-primary"
+                         *ngIf="fullNameControl.valid">Valid Mailid
+                         </span>
+                        </form>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </section>
         
 
         </div>
