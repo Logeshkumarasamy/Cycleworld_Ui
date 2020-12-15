@@ -9,7 +9,7 @@
                   <a href="" data-target="#messages" data-toggle="tab" class="nav-link">Messages</a>
               </li>
               <li class="nav-item">
-                  <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit</a>
+                  <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit Profile</a>
               </li>
               <li class="nav-item">
                 <button class="btn btn-danger" (click)="Logout()">Logout</button>
@@ -26,35 +26,33 @@
                          
                       </div>
                       <div class="col-md-12">
-                          <h5 class="mt-2"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h5>
+                          <h5 class="mt-2" style="font-size: 0px;"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h5>
                           <table class="table table-sm table-hover table-striped">
-                              <tbody>                                    
+                            <table class="table table-bordered table-hover">
+                                <thead>
                                   <tr>
-                                      <td>
-                                          <strong>Abby</strong> joined ACME Project Team in <strong>`Collaboration`</strong>
-                                      </td>
+                                    <th scope="col">product id</th>
+                                    <th scope="col">product Name</th>
+                                    <th scope="col">product price</th>
+                                    <th scope="col">expiry date</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Hero cycle</td>
+                                    <td>5000</td>
+                                    <td>20 dec 2020</td>
                                   </tr>
                                   <tr>
-                                      <td>
-                                          <strong>Gary</strong> deleted My Board1 in <strong>`Discussions`</strong>
-                                      </td>
+                                    <th scope="row">2</th>
+                                    <td>pump</td>
+                                    <td>500</td>
+                                    <td>20 may 2021</td>
                                   </tr>
-                                  <tr>
-                                      <td>
-                                          <strong>Kensington</strong> deleted MyBoard3 in <strong>`Discussions`</strong>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          <strong>John</strong> deleted My Board1 in <strong>`Discussions`</strong>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          <strong>Skell</strong> deleted his post Look at Why this is.. in <strong>`Discussions`</strong>
-                                      </td>
-                                  </tr>
-                              </tbody>
+                                  
+                                </tbody>
+                              </table>
                           </table>
                       </div>
                   </div>
@@ -98,19 +96,19 @@
                       <div class="form-group row">
                           <label class="col-lg-3 col-form-label form-control-label">First name</label>
                           <div class="col-lg-9">
-                              <input class="form-control" type="text" value="Jane">
+                              <input class="form-control" type="text" value="">
                           </div>
                       </div>
                       <div class="form-group row">
                           <label class="col-lg-3 col-form-label form-control-label">Last name</label>
                           <div class="col-lg-9">
-                              <input class="form-control" type="text" value="Bishop">
+                              <input class="form-control" type="text" value="">
                           </div>
                       </div>
                       <div class="form-group row">
                           <label class="col-lg-3 col-form-label form-control-label">Email</label>
                           <div class="col-lg-9">
-                              <input class="form-control" type="email" value="email@gmail.com">
+                              <input class="form-control" type="email" value="">
                           </div>
                       </div>
                       
@@ -130,22 +128,11 @@
                           </div>
                       </div>
                       
-                      <div class="form-group row">
-                          <label class="col-lg-3 col-form-label form-control-label">Username</label>
-                          <div class="col-lg-9">
-                              <input class="form-control" type="text" value="janeuser">
-                          </div>
-                      </div>
-                      <div class="form-group row">
-                          <label class="col-lg-3 col-form-label form-control-label">Password</label>
-                          <div class="col-lg-9">
-                              <input class="form-control" type="password" value="11111122333">
-                          </div>
-                      </div>
+                      
                       <div class="form-group row">
                           <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
                           <div class="col-lg-9">
-                              <input class="form-control" type="password" value="11111122333">
+                              <input class="form-control" type="password" value="">
                           </div>
                       </div>
                       <div class="form-group row">
@@ -159,8 +146,8 @@
               </div>
           </div>
       </div>
-      <div class="col-lg-4 order-lg-1 text-center">
-          <img src="//placehold.it/150" class="mx-auto img-fluid img-circle d-block" alt="avatar">
+      <div class="col-lg-4 order-lg-3 text-center" style="height: 10px;" >
+          <img src="data:image/jpeg;base64,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" class="mx-auto img-fluid img-circle d-block" alt="avatar">
           <h6 class="mt-2">Upload a different photo</h6>
           <label class="custom-file">
               <input type="file" id="file" class="custom-file-input">

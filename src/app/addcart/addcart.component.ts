@@ -8,22 +8,22 @@ import { UserregisterService } from '../userregister.service';
   styleUrls: ['./addcart.component.css']
 })
 export class AddcartComponent implements OnInit {
-  name ="LOGESH";
-  UserReg: any =[];
+  name = "LOGESH";
+  UserReg: any = [];
 
-  constructor(private UserService :UserregisterService,private router: Router) { }
+  constructor(private UserService: UserregisterService, private router: Router) { }
 
   ngOnInit(): void {
-    this.UserService.getAllUser().subscribe((data)=>{
-      this.UserReg=data;
-       });
+    this.UserService.getAllUser().subscribe((data) => {
+      this.UserReg = data;
+    });
   }
   Cart() {
     window.alert("successfully added to cart")
     this.router.navigate(['home']);
 
   }
-  
 
 
-  }
+
+}

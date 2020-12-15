@@ -44,7 +44,7 @@ export class DashboardComponent implements OnInit {
   }
   update =()=>{
     //this.UserService.createUser(this.UserReg).subscribe(()=>{
-      Swal.fire('Successful!');
+      Swal.fire('Successfully Your Data Updated');
       close;
     //})
   }
