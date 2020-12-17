@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CompareproductComponent } from './compareproduct.component';
+import { ComapreproductComponent } from './comapreproduct.component';
 
-describe('CompareproductComponent', () => {
-  let component: CompareproductComponent;
-  let fixture: ComponentFixture<CompareproductComponent>;
+describe('ComapreproductComponent', () => {
+  let component: ComapreproductComponent;
+  let fixture: ComponentFixture<ComapreproductComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CompareproductComponent ]
+      declarations: [ ComapreproductComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CompareproductComponent);
+    fixture = TestBed.createComponent(ComapreproductComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

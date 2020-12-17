@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddcartComponent } from './addcart/addcart.component';
-import { CompareproductComponent } from './compareproduct/compareproduct.component';
+import { ComapreproductComponent } from './comapreproduct/comapreproduct.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FeedgetComponent } from './feedget/feedget.component';
@@ -26,7 +26,7 @@ const routes: Routes = [
   {path :'productDetails',component:ProductDeteilsComponent},
   {path :'UserCart',component:AddcartComponent},
   {path:"list",component:ProCatComponent},
-  {path:'compareproduct',component:CompareproductComponent},
+  {path:"compareproduct",component:ComapreproductComponent},
   {path:'feedget',component:FeedgetComponent}
 
 

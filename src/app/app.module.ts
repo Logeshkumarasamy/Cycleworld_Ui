@@ -17,8 +17,9 @@ import { ProductDeteilsComponent } from './product-deteils/product-deteils.compo
 import { AddcartComponent } from './addcart/addcart.component';
 import { OrderProductComponent } from './order-product/order-product.component';
 import { ProCatComponent } from './pro-cat/pro-cat.component';
-import { CompareproductComponent } from './compareproduct/compareproduct.component';
 import { FeedgetComponent } from './feedget/feedget.component';
+import { ComapreproductComponent } from './comapreproduct/comapreproduct.component';
+import { SortprodutComponent } from './sortprodut/sortprodut.component';
 
 
 
@@ -38,8 +39,9 @@ import { FeedgetComponent } from './feedget/feedget.component';
     AddcartComponent,
     OrderProductComponent,
     ProCatComponent,
-    CompareproductComponent,
-    FeedgetComponent
+    FeedgetComponent,
+    ComapreproductComponent,
+    SortprodutComponent
   ],
   imports: [
     BrowserModule,
