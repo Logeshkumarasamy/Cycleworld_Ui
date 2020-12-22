@@ -20,6 +20,11 @@ import { ProCatComponent } from './pro-cat/pro-cat.component';
 import { FeedgetComponent } from './feedget/feedget.component';
 import { ComapreproductComponent } from './comapreproduct/comapreproduct.component';
 import { SortprodutComponent } from './sortprodut/sortprodut.component';
+import { HelmatComponent } from './helmat/helmat.component';
+import { PumpComponent } from './pump/pump.component';
+import { BellsComponent } from './bells/bells.component';
+import { WomancatComponent } from './womancat/womancat.component';
+import { BoyscatComponent } from './boyscat/boyscat.component';
 
 
 
@@ -41,7 +46,12 @@ import { SortprodutComponent } from './sortprodut/sortprodut.component';
     ProCatComponent,
     FeedgetComponent,
     ComapreproductComponent,
-    SortprodutComponent
+    SortprodutComponent,
+    HelmatComponent,
+    PumpComponent,
+    BellsComponent,
+    WomancatComponent,
+    BoyscatComponent
   ],
   imports: [
     BrowserModule,

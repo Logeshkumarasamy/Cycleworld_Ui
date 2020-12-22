@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sortprodut.component.css']
 })
 export class SortprodutComponent implements OnInit {
-
+   Title ="SHOWING 1–2 OF 2 RESULTS";
   constructor() { }
 
   ngOnInit(): void {

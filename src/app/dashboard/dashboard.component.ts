@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { Addproduct } from '../addproduct';
 import { UserReg } from '../user-reg';
 import { UserregisterService } from '../userregister.service';
 
@@ -11,10 +12,12 @@ import { UserregisterService } from '../userregister.service';
 })
 export class DashboardComponent implements OnInit {
   UserReg: any =[];
+  Addproduct : Addproduct;
   
   constructor(private UserService :UserregisterService,private router: Router) { }
   
   ngOnInit(): void {
+    this.Addproduct =new Addproduct();
     
     this.UserService.getAllUser().subscribe((data)=>{
     this.UserReg=data;
@@ -37,10 +40,10 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['/login']);
   }
   add =()=>{
-    //this.UserService.createUser(this.UserReg).subscribe(()=>{
+    this.UserService.add(this.Addproduct).subscribe(()=>{
       Swal.fire('Successfully added Product');
-      close;
-    //})
+      this.router.navigate(['login']);
+    })
   }
   update =()=>{
     //this.UserService.createUser(this.UserReg).subscribe(()=>{
